@@ -1,0 +1,121 @@
+
+     * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* ფონის სტილი */
+.background {
+    background-image: url(./image/ocean-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* მთავარი განლაგება: 2 სვეტი ეკრანზე დასაჯდომად */
+.main-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    height: 100vh;
+    padding: 0 5% 0 8%;
+    gap: 30px;
+}
+
+/* მარცხენა კონტენტის ბლოკი */
+.left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+h1 {
+    font-size: 27px;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.textBox {
+    max-width: 420px;
+}
+
+.text2 {
+    font-size: 12px;
+    color: rgb(194, 192, 192);
+    line-height: 1.6;
+}
+
+.address-section {
+    margin-top: 2px;
+}
+
+.text3 {
+    font-size: 11px;
+    color: rgb(205, 201, 201);
+    margin-bottom: 2px;
+}
+
+.text4 {
+    font-size: 12px;
+    color: rgb(246, 243, 243); 
+    word-break: break-all;
+}
+
+/* ღილაკების ბადე (2 სვეტიანი) */
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    width: 420px;
+    margin-top: 8px;
+}
+
+.button {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 11px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* სურათზე ნაჩვენები ბოლო "BUY NOW" ღილაკის ყვითელი ჩარჩო/აქცენტი */
+.highlight-btn {
+    border-color: #f3ba2f;
+}
+
+.highlight-btn p {
+    color: #f3ba2f;
+}
+
+/* თევზების სურათის პოზიცია მარჯვენა მხარეს */
+.fishishimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fishishimg img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
